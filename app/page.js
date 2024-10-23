@@ -3,8 +3,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar></Navbar>
+    <div className=" text-gray-900 ">
+      {/* <Navbar></Navbar> */}
+
       <h1>Hello World</h1>
     </div>
   );
