@@ -106,7 +106,10 @@ const DrawerMainMenuList = ({ setIsDrawerOpen }) => {
   ];
 
   return (
-    <div className="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 pt-20 px-10 bg-[#F9FAFB] overflow-hidden h-screen">
+    <div
+      className="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4
+      gap-6 pt-20 px-10 bg-[#F9FAFB] overflow-hidden h-screen"
+    >
       {MenuList?.map((item, i) => (
         <div key={i}>
           <MenuCard
