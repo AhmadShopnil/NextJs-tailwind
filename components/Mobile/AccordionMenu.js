@@ -70,7 +70,7 @@ const AccordionMenu = () => {
           <div key={index} className="border rounded-lg overflow-hidden">
             {/* Menu Title and button for open menu */}
             <button
-              className="w-full flex justify-between items-center py-6 px-4 font-semibold"
+              className="w-full flex justify-between items-center py-6 px-4 text-black text-lg"
               onClick={() => toggleAccordion(index)}
             >
               <span>{menus.title}</span>
