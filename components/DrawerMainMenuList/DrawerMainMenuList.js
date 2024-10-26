@@ -1,10 +1,12 @@
 import React from "react";
 import MenuCard from "../MenuCard/MenuCard";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const DrawerMainMenuList = ({ setIsDrawerOpen }) => {
   const MenuList = [
     {
       title: "Consumer Insights",
+      icon: "/icons/icon-consumer-insights.svg",
       nestedMenuItems: [
         {
           title: "Overview",
@@ -22,6 +24,7 @@ const DrawerMainMenuList = ({ setIsDrawerOpen }) => {
     },
     {
       title: "Marketing Strategies",
+      icon: "/icons/icon-marketing-strategies.svg",
       nestedMenuItems: [
         {
           title: "Overview",
@@ -55,6 +58,8 @@ const DrawerMainMenuList = ({ setIsDrawerOpen }) => {
     },
     {
       title: "Future of Marketing",
+      icon: "/icons/icon-future-of-marketing.svg",
+
       nestedMenuItems: [
         {
           title: "Overview",
@@ -84,6 +89,7 @@ const DrawerMainMenuList = ({ setIsDrawerOpen }) => {
     },
     {
       title: "Tools",
+      icon: "/icons/icon-tools.svg",
       nestedMenuItems: [
         {
           title: "Overview",

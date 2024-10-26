@@ -2,13 +2,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons"; // Import the specific icon you need
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const MenuCard = ({ menuList, setIsDrawerOpen }) => {
   return (
     <div className="bg-white shadow-md  pt-6 rounded-md border border-gray-300 w-72">
       {/* Title Section */}
       <h3 className=" px-5 text-xl font-semibold flex items-center pb-3 border-b border-gray-300">
-        <span className="mr-2">🔍</span> {menuList?.title}
+        <span className="mr-2">
+          <Image
+            src={menuList?.icon}
+            alt={`${menuList.title} icon`}
+            width={24}
+            height={24}
+          />
+        </span>{" "}
+        {menuList?.title}
       </h3>
 
       {/* Menu List */}
